@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number</title>
+
+    <link rel="stylesheet" href="style_lab14.css">
+</head>
+<body>
+    <div class="top">
+        <div class="user-profile">
+            <h1><span id="username">Stamp</span> Phone Book</h1>
+            <div class="img-box">
+                <img id="imgJa" src="https://i.pinimg.com/736x/96/1c/23/961c23af0084e62064c1ee6a6a9121ee.jpg" alt="photo">
+                <div class="noti">1</div>
+            </div>
+        </div>
+        <div class="form-input">
+            <div class="username-input-form">
+                <label for="">Set the Username</label>
+                <input class="input" type="text" id="username-input" placeholder="Enter Username">
+                <button onclick="setUsername()" class="btn">SET</button>
+            </div>
+            <div class="img-input-from">
+                <label for="">Set the profile image URL</label>
+                <input class="input" type="text" id="img-input" placeholder="Enter Image URL">
+                <button onclick="setImg()" class="btn">SET</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="form">
+            <h4>Phone Number List</h4>
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Tel" id="tel">
+            <button onclick="addItem()" class="btn">ADD</button>
+            <button onclick="saveCSV()" class="btn">EXPORT</button>
+        </div>
+        <table id="contactTable">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
